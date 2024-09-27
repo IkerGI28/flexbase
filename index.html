@@ -2,31 +2,27 @@
 	<head>
 
 		<link href="estiloak.css" rel="stylesheet">
-		<script src="./main.js"></script>
 	</head>
 	<body>
 
 	<div class="flex-container">
 
 	  <div class="flex left">
-	    Flex Column 1
-		<img src = https://covers.openlibrary.org/b/id/>
+		<img id = "liburuaren-irudia" style="margin-left: 10%; margin-right: 10%; margin-top: 1%;">
 	  </div>
 
 	  <div class="flex right">
-	    Flex Column 2
 		<form>
-			<input class="text" value=""><br>
-			<input class="text" value=""><br>
-			<input class="text" value=""><br>
-			<input class="text" value=""><br>
-			<input class="text" value=""><br>
-			º<button>"<<<"</button><button>">>>"</button>
+			<p><label>Izenburua: </label><input id = "izenburua" class="text" value="" style="padding-right: 50%; margin-bottom: 2%; margin-top: 2%;"></p>
+			<p><label>Egilea: </label><input id = "egilea" class="text" value="" style="margin-bottom: 2%;"></p>
+			<p><label>ISBN: </label><input id = "isbn" class="text" value="" style="margin-bottom: 2%;"></p>
+			<p><label>Data: </label><input id = "data" class="text" value="" style="margin-bottom: 2%;"></p>
+			<button id="aurrekoa"><<</button><button id = "hurrengoa" style="margin-left: 0.5%;">>></button>
 		</form>
 	  </div>
 
 	</div>
-
+	<script src="./main.js"></script>
     </body>
 </html>
 
