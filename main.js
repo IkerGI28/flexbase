@@ -72,3 +72,20 @@ const datubasea = [
 
 aurrekoa_botoia.onclick = aurrekoargazkiaerakutsi;
 hurrengoa_botoia.onclick = hurrengoargazkiaerakutsi;
+
+const liburuabilatu = (event) => {
+  event.preventDefault();
+  let lib = datubasea.filter(liburua => liburua.isbn == isbn.value);
+  if(lib.length != 0){
+    argazkia.src = "https://covers.openlibrary.org/b/id/"+lib[0].filename;
+    izenburua.value = lib[0].izenburua;
+    egilea.value = lib[0].egilea;
+    isbn.value = lib[0].isbn;
+    data.value = lib[0].data;
+  }else{
+    argazkiaeguneratu;
+  }
+}
+
+let bilatu = document.getElementById("bilatu");
+bilatu.onclick = liburuabilatu;
